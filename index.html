@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mahir Dhami | Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eef0ed;
+            color: #202522;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 60px 70px;
+            background: #f8f9f7;
+        }
+
+        /* Header */
+
+        header {
+            padding-bottom: 35px;
+            border-bottom: 1px solid #cdd2cd;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 600;
+            letter-spacing: -2px;
+            color: #1d211f;
+        }
+
+        .role {
+            margin-top: 5px;
+            color: #657c6d;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .contact {
+            text-align: right;
+            font-size: 12px;
+            color: #707671;
+            line-height: 1.8;
+        }
+
+        /* Sections */
+
+        section {
+            margin-top: 38px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #657c6d;
+            margin-bottom: 16px;
+        }
+
+        .profile {
+            max-width: 760px;
+            font-size: 14px;
+            color: #5f6561;
+        }
+
+        /* Education */
+
+        .education {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            padding: 13px 0;
+            border-bottom: 1px solid #dde1dd;
+        }
+
+        .education h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #303532;
+        }
+
+        .education p {
+            font-size: 13px;
+            color: #747a76;
+        }
+
+        .score {
+            text-align: right;
+            color: #657c6d !important;
+            font-weight: 600;
+        }
+
+        /* Skills */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+        }
+
+        .skill {
+            font-size: 13px;
+            color: #5f6561;
+        }
+
+        .skill::before {
+            content: "·";
+            color: #657c6d;
+            font-weight: bold;
+            margin-right: 7px;
+        }
+
+        /* Projects */
+
+        .project {
+            display: grid;
+            grid-template-columns: 210px 1fr;
+            gap: 25px;
+            padding: 13px 0;
+            border-bottom: 1px solid #dde1dd;
+        }
+
+        .project h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #303532;
+        }
+
+        .project p {
+            font-size: 13px;
+            color: #747a76;
+        }
+
+        /* Bottom */
+
+        .bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-size: 13px;
+            color: #656b67;
+            margin-bottom: 7px;
+        }
+
+        li::before {
+            content: "—";
+            color: #657c6d;
+            margin-right: 8px;
+        }
+
+        /* Footer */
+
+        footer {
+            margin-top: 45px;
+            padding-top: 15px;
+            border-top: 1px solid #cdd2cd;
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            color: #8b918d;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 700px) {
+
+            .resume {
+                width: 94%;
+                margin: 20px auto;
+                padding: 35px 25px;
+            }
+
+            .header-content {
+                display: block;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .contact {
+                text-align: left;
+                margin-top: 15px;
+            }
+
+            .education,
+            .project,
+            .bottom {
+                grid-template-columns: 1fr;
+                gap: 3px;
+            }
+
+            .score {
+                text-align: left;
+            }
+
+            footer {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="resume">
+
+        <header>
+
+            <div class="header-content">
+
+                <div>
+                    <h1>Mahir Dhami</h1>
+                    <p class="role">Computer Science Engineering</p>
+                </div>
+
+                <div class="contact">
+                    Mumbai, Maharashtra<br>
+                    mahir,dhami25@sakec.ac.in<br>
+                    GitHub · Mahir Dhami
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section>
+
+            <h2 class="section-title">Profile</h2>
+
+            <p class="profile">
+                Computer Science Engineering student currently in the third
+                semester, interested in software development, web technologies
+                and problem solving. Currently developing a strong foundation
+                in programming and Data Structures while working on practical
+                projects.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2 class="section-title">Education</h2>
+
+            <div class="education">
+                <div>
+                    <h3>B.E. Computer Science Engineering</h3>
+                    <p>Shah & Anchor Kutchhi Engineering College, Mumbai</p>
+                    <p>Third Semester</p>
+                </div>
+
+                <p class="score">
+                    8.5 CGPA<br>
+                    First Year
+                </p>
+            </div>
+
+            <div class="education">
+                <div>
+                    <h3>Higher Secondary Education</h3>
+                    <p>Mulund Vidya Mandir, Mumbai</p>
+                </div>
+
+                <p class="score">69.5%</p>
+            </div>
+
+            <div class="education">
+                <div>
+                    <h3>Secondary School Education</h3>
+                    <p>EuroSchool, Airoli</p>
+                </div>
+
+                <p class="score">~96%</p>
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills">
+                <span class="skill">C</span>
+                <span class="skill">C++</span>
+                <span class="skill">Java</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Git & GitHub</span>
+                <span class="skill">Data Structures</span>
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project">
+                <h3>Attendance Management</h3>
+                <p>
+                    Developed a basic system for recording and displaying
+                    student attendance information.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Web Development</h3>
+                <p>
+                    Created responsive webpages using HTML, CSS, JavaScript,
+                    Bootstrap and REST APIs.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Data Structures</h3>
+                <p>
+                    Implemented fundamental data structures and algorithms
+                    using C, including stacks, queues and graph traversal.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Data Visualization</h3>
+                <p>
+                    Created interactive charts using JavaScript and Chart.js
+                    to represent dynamic data.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="bottom">
+
+            <div>
+                <h2 class="section-title">Core Areas</h2>
+
+                <ul>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Web Development</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="section-title">Interests</h2>
+
+                <ul>
+                    <li>Software Development</li>
+                    <li>Open Source</li>
+                    <li>Web Technologies</li>
+                    <li>Emerging Technologies</li>
+                </ul>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <span>MAHIR DHAMI</span>
+            <span>WEB RESUME · 2026</span>
+        </footer>
+
+    </main>
+
+</body>
+</html>
